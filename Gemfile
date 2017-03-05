@@ -8,7 +8,6 @@ end
 
 gem 'pg'
 gem 'rails', '~> 5.0.1'
-gem 'sqlite3'
 gem 'puma', '~> 3.0'
 gem 'bootstrap-sass', '~> 3.3.5'
 gem 'devise', '~> 4.2'
