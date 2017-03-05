@@ -16,6 +16,11 @@
           <li><%= msg %></li>
         </ul>
     <% end %>
+    <p class="notice"> <%= notice %></p>
+    <p class="alert"> <%= alert %></p>
+    <div style="width:900px;margin:0 auto;">
+
     <%= yield %>
+    </div>
   </body>
 </html>

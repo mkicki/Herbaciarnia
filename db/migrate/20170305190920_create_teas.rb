@@ -3,7 +3,7 @@ class CreateTeas < ActiveRecord::Migration[5.0]
     create_table :teas do |t|
       t.string :name
       t.string :country
-      t.string :type
+      t.string :kind
     end
   end
 end
