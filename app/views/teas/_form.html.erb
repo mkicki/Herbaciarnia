@@ -1,0 +1,29 @@
+<% if @tea.errors.any? %>
+    <h1>Errors which occured</h1>
+
+    <% @tea.errors.full_messages.each do |msg| %>
+        <div class="alert alert-danger" role="alert">
+          <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+          <span class="sr-only">Error:</span>
+          <%= msg %>
+        </div>
+    <% end %>
+
+<% end %>
+
+<%= form_for @tea do |f| %>
+    <p>
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+    </p>
+    <p>
+      <%= f.label :country %>
+      <%= f.text_field :country %>
+    </p>
+    <p>
+      <%= f.label :type %>
+      <%= f.password_field :type %>
+    </p>
+    <%= f.submit %>
+
+<% end %>

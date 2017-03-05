@@ -1,0 +1,17 @@
+<h1>Listing all users</h1>
+
+<table class="table">
+  <tr>
+    <th>Username</th>
+    <th>Email</th>
+    <th>Options</th>
+  </tr>
+
+  <% @teas.each do |u| %>
+      <tr>
+        <td><%= u.username %></td>
+        <td><%= u.email %></td>
+      </tr>
+  <% end %>
+
+</table>
