@@ -1,7 +1,9 @@
-xDD
+
 <h2>
-  <ul>
-<li><%= link_to "List", controller: "teas", action: "index" %></li>
-<li><%= link_to "Create", controller: "teas", action: "new" %></li>
-  </ul>
+
+<div><%= link_to "List", controller: "teas", action: "index" %></div>
+    <% if user_signed_in? %>
+<div><%= link_to "Create", controller: "teas", action: "new" %></div>
+        <% end %>
+
 </h2>
