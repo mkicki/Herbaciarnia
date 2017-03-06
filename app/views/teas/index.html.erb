@@ -13,8 +13,8 @@
         <td><%= tea.name %></td>
         <td><%= tea.country %>
         <td><%= tea.kind %>
-        <td><%= link_to 'Show', tea_path(tea)  %> |
-          <% if user_signed_in? %>
+        <td><%= link_to 'Show', tea_path(tea)  %>
+          <% if user_signed_in? %>|
           <%= link_to 'Edit', edit_tea_path(tea)  %> |  <%= link_to 'Delete', tea_path(tea), method: :delete  %>
           <% end %>
               </td>
