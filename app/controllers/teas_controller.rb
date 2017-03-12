@@ -2,7 +2,7 @@ class TeasController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @teas = Tea.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
+    @teas = Tea.all.paginate(:page => params[:page], :per_page => 9)
   end
 
   def create
