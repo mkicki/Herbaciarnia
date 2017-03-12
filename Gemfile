@@ -18,8 +18,8 @@ gem 'will_paginate', '~> 3.1', '>= 3.1.5'
 gem 'jquery-rails'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
-gem 'bulma-rails', '~> 0.3.1'
-gem "font-awesome-rails"
+gem "bulma-rails", "~> 0.3.2"
+gem 'font-awesome-rails'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
