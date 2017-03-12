@@ -1,24 +1,12 @@
-# README
+## Maksymilian Kicki(zaliczenie)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+| Wersja Ruby   | Wersja Rails  |                Baza danych                 | Framework |           Dodatkowe gemy           |
+| ------------- |:-------------:|:-------------------------------------------|:---------:|:----------------------------------:|
+| 2.4.0        | 5.0.2         | PostgreSQL - Heroku                         | Bootstrap | devise, will_paginate,  |
 
-Things you may want to cover:
 
-* Ruby version
+:white_check_mark: [link do wdrożonej na zewnętrznym serwerze aplikacji](https://herbaciarnia.herokuapp.com)
 
-* System dependencies
+### Temat: Herbaciarnia
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Herbaciarnia jest aplikacją pozwalająca na przeglądanie, dodawanie, usuwanie i edytowanie listy herbat. 
