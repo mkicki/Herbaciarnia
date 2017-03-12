@@ -5,7 +5,7 @@
       <div class="col-md-4 img-thumbnail" >
         <div class="col-sm-12" style="word-wrap: break-word; ">
           <div class="col-sm-12">
-            <h2><%=  t.name %></h2>
+            <h2><%= t.name %></h2>
 
           </div>
           <div>
@@ -22,7 +22,10 @@
   <% end %>
 </div>
 <div class="row">
-  <div style="float:left;">
-  <%= will_paginate @teas %>
-  </div>
+  <nav aria-label="Page navigation">
+    <div class="pagination">
+      <%= will_paginate @teas %>
+    </div>
+  </nav>
+
 </div>
