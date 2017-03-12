@@ -2,7 +2,7 @@ class TeasController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @teas = Tea.all
+    @teas = Tea.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 9)
   end
 
   def create
@@ -26,10 +26,11 @@ class TeasController < ApplicationController
   end
 
   def update
-    @tea = Tea.find(params[:id])
-
-    render 'edit'
-
+    if @tea.update(tea_params)
+      redirect_to tea_path
+    else
+      render 'edit'
+    end
   end
 
   def show

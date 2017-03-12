@@ -1,24 +1,18 @@
-<h1>Listing all teas</h1>
 
-<table class="table" >
-  <tr>
-    <th>Username</th>
-    <th>Country of origin</th>
-    <th>Type</th>
-    <th>Options</th>
-  </tr>
+<div class="row-flex row-flex-wrap">
+  <% @teas.each do |t| %>
 
-  <% @teas.each do |tea| %>
-      <tr>
-        <td><%= tea.name %></td>
-        <td><%= tea.country %>
-        <td><%= tea.kind %>
-        <td><%= link_to 'Show', tea_path(tea)  %>
-          <% if user_signed_in? %>|
-          <%= link_to 'Edit', edit_tea_path(tea)  %> |  <%= link_to 'Delete', tea_path(tea), method: :delete  %>
-          <% end %>
-              </td>
-      </tr>
+      <div class="col-md-4" style="background: gainsboro;border:3px solid white">
+        <div class="col-sm-12" style="word-wrap: break-word; ">
+          <div class="col-sm-12">
+            <h2><%=  t.name %></h2>
+          </div>
+          <%= link_to "View Message", message_path(t), class: "btn btn-default btn-sm pull-right", style: "margin-bottom:5px;"%>
+          <div class="clearfix"></div>
+        </div>
+      </div>
   <% end %>
-
-</table>
+</div>
+<div class="row">
+  <%= will_paginate @teas %>
+</div>
