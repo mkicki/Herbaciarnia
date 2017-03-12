@@ -10,7 +10,7 @@
           </div>
           <div>
           <%= link_to 'Show', tea_path(t)  %>
-          <% if user_signed_in? %>|
+          <% if user_signed_in? %>
               | <%= link_to 'Edit', edit_tea_path(t)  %> |  <%= link_to 'Delete', tea_path(t), method: :delete  %>
           <% end %>
           </div>
@@ -22,5 +22,7 @@
   <% end %>
 </div>
 <div class="row">
+  <div style="float:left;">
   <%= will_paginate @teas %>
+  </div>
 </div>
