@@ -2,18 +2,18 @@
 <div class="row-flex row-flex-wrap">
   <% @teas.each do |t| %>
 
-      <div class="jumbotron col-md-4" >
+      <div class="jumbotron col-md-4" style="margin-left:5px;">
         <div class="col-sm-12" style="word-wrap: break-word; ">
           <div class="col-sm-12">
             <h2><%=  t.name %></h2>
-            <%= t.country %>
-            <%= t.kind %>
+
           </div>
+          <div>
           <%= link_to 'Show', tea_path(t)  %>
           <% if user_signed_in? %>|
-              <%= link_to 'Edit', edit_tea_path(t)  %> |  <%= link_to 'Delete', tea_path(t), method: :delete  %>
+              | <%= link_to 'Edit', edit_tea_path(t)  %> |  <%= link_to 'Delete', tea_path(t), method: :delete  %>
           <% end %>
-
+          </div>
 
           <div class="clearfix"></div>
 
