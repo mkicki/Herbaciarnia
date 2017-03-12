@@ -6,16 +6,15 @@
         <div class="col-sm-12" style="word-wrap: break-word; ">
           <div class="col-sm-12">
             <h2><%=  t.name %></h2>
-            <%= tea.country %>
-            <%= tea.kind %>
+            <%= t.country %>
+            <%= t.kind %>
           </div>
-          <%= link_to 'Show', tea_path(tea)  %>
+          <%= link_to 'Show', tea_path(t)  %>
           <% if user_signed_in? %>|
-              <%= link_to 'Edit', edit_tea_path(tea)  %> |  <%= link_to 'Delete', tea_path(tea), method: :delete  %>
+              <%= link_to 'Edit', edit_tea_path(t)  %> |  <%= link_to 'Delete', tea_path(t), method: :delete  %>
           <% end %>
-          </td>
-          </tr>
-  <% end %>
+
+
           <div class="clearfix"></div>
 
         </div>
