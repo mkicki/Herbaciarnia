@@ -1,6 +1,11 @@
 <h1>Showing selected tea</h1>
-
-<p>Name: <%= @tea.name %></p>
-<p>Country: <%= @tea.country %> </p>
-<p>Type: <%= @tea.kind %> </p>
-<p> <%= image_tag @tea.cover.url  if @tea.cover? %></p>
+<div style="display:inline-block;">
+  <div>
+    <p>Name: <%= @tea.name %></p>
+    <p>Country: <%= @tea.country %> </p>
+    <p>Type: <%= @tea.kind %> </p>
+  </div>
+  <div>
+    <%= image_tag @tea.cover.url  if @tea.cover? %>
+  </div>
+</div>
