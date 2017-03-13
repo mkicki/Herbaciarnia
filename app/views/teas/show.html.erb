@@ -3,3 +3,4 @@
 <p>Name: <%= @tea.name %></p>
 <p>Country: <%= @tea.country %> </p>
 <p>Type: <%= @tea.kind %> </p>
+<p> <%= image_tag(@tea.avatar_url) if @tea.avatar? %></p>

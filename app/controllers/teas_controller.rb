@@ -48,7 +48,7 @@ class TeasController < ApplicationController
 
   private
   def tea_params
-    params.require(:tea).permit(:name, :country, :kind)
+    params.require(:tea).permit(:name, :country, :kind, :avatar )
   end
 
   def find_tea
