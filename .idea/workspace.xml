@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="68a0b582-f540-4292-98fc-1c61f7f03c0d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/teas_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/teas_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/teas/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/teas/_form.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/teas/show.html.erb" afterPath="$PROJECT_DIR$/app/views/teas/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb" afterPath="$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -73,7 +71,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/teas/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
@@ -103,7 +101,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="20170305190920_create_teas.rb" pinned="false" current-in-tab="false">
+      <file leaf-file-name="20170305190920_create_teas.rb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -150,10 +148,10 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/tea.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb" />
         <option value="$PROJECT_DIR$/app/controllers/teas_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/teas/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/teas/show.html.erb" />
+        <option value="$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb" />
       </list>
     </option>
   </component>
@@ -521,15 +519,15 @@
       <workItem from="1488821564719" duration="4492000" />
       <workItem from="1488838166147" duration="28000" />
       <workItem from="1489347476553" duration="11884000" />
-      <workItem from="1489433917262" duration="3062000" />
+      <workItem from="1489433917262" duration="3326000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31110000" />
+    <option name="totallyTimeSpent" value="31374000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="1" />
+    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24889868" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -889,26 +887,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/tea.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/db/migrate/20170313201002_add_avatar_to_teas.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="22" lean-forward="false" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -941,6 +923,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="42" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/tea.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20170305190920_create_teas.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
           <folding />
         </state>
       </provider>
