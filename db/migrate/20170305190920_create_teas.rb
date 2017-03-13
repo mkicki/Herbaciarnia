@@ -4,7 +4,7 @@ class CreateTeas < ActiveRecord::Migration[5.0]
       t.string :name
       t.string :country
       t.string :kind
-      t.string :avatar
+      t.string :cover
     end
   end
 end
