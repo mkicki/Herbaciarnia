@@ -1,4 +1,5 @@
 class TeasController < ApplicationController
+  before_action :find_tea, only: [:show, :edit, :update, :destroy]
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
@@ -26,7 +27,7 @@ class TeasController < ApplicationController
   end
 
   def update
-    if @tea.update(tea_params)
+    if @tea.update_attributes(tea_params)
       redirect_to tea_path
     else
       render 'edit'
@@ -48,6 +49,10 @@ class TeasController < ApplicationController
   private
   def tea_params
     params.require(:tea).permit(:name, :country, :kind)
+  end
+
+  def find_tea
+    @tea = Tea.find(params[:id])
   end
 
 
